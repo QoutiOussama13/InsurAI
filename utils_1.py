@@ -18,11 +18,12 @@ import io
 import base64
 import requests
 from PIL import Image
+import streamlit as st
 
 load_dotenv()
 
-tavily_api_key = os.getenv("TAVILY_API_KEY")
-openai_api_key = os.getenv("OPENAI_API_KEY")
+tavily_api_key = st.secrets["TAVILY_API_KEY"]
+openai_api_key = st.secrets["OPENAI_API_KEY"]
 
 embeddings = OpenAIEmbeddings()
 
