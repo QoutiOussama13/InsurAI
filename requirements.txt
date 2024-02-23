@@ -1,4 +1,5 @@
 tenacity==8.2.3
+bs4
 chroma-hnswlib==0.7.3
 chromadb==0.4.22
 dataclasses==0.6
