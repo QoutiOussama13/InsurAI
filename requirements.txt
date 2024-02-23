@@ -32,7 +32,6 @@ semver==3.0.2
 sqlparse==0.4.4
 st-multimodal-chatinput==0.1.6
 stack-data==0.6.3
-starlette==0.36.3
 streamlit==1.31.1
 streamlit-bokeh-events==0.1.2
 streamlit-chat==0.1.1
