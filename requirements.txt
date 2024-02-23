@@ -2,10 +2,6 @@ tenacity==8.2.3
 beautifulsoup4==4.12.2
 chroma-hnswlib==0.7.3
 chromadb==0.4.22
-Keras-Preprocessing==1.1.2
-kiwisolver==1.4.4
-kubernetes==29.0.0
-lancedb==0.4.0
 langchain==0.0.352
 langchain-community==0.0.13
 langchain-core==0.1.23
@@ -21,8 +17,6 @@ mpmath==1.3.0
 mypy-extensions==1.0.0
 networkx==3.2.1
 nltk==3.8.1
-node==0.9.26
-numpy==1.24.3
 oauthlib==3.2.2
 odict==1.7.0
 onnxruntime==1.17.0
@@ -34,11 +28,6 @@ portalocker==2.8.2
 posthog==3.4.1
 prance==23.6.21.0
 prompt-toolkit==3.0.43
-proto-plus==1.23.0
-protobuf==4.25.1
-PyYAML==6.0.1
-pyzmq==25.1.2
-qdrant-client==1.7.0
 semver==3.0.2
 sqlparse==0.4.4
 st-multimodal-chatinput==0.1.6
