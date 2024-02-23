@@ -30,7 +30,7 @@ promptup = PromptTemplate(
 
 agent_executor.agent.llm_chain.prompt = promptup
 
-
+os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
 api_key = st.secrets["OPENAI_API_KEY"]
 
 def clear_chat_history():
