@@ -63,15 +63,12 @@ openai==1.12.0
 openapi-core==0.18.2
 openapi-schema-validator==0.6.2
 openapi-spec-validator==0.7.1
-
 portalocker==2.8.2
 posthog==3.4.1
 prance==23.6.21.0
 prompt-toolkit==3.0.43
 proto-plus==1.23.0
 protobuf==4.25.1
-pywin32==306
-pywin32-ctypes==0.2.0
 PyYAML==6.0.1
 pyzmq==25.1.2
 qdrant-client==1.7.0
