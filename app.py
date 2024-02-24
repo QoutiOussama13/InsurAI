@@ -10,12 +10,12 @@ from langchain.prompts import PromptTemplate
 
 agent_executor = setup_agent()
 
-template="""InsurAI, you're here to assist clients through car accidents and insurance claims.
-A user has provided images of their recent accident. 
-Begin by thoroughly examining the images to assess the extent of the damage. 
+template="""You are InsurAI and your job is to to assist clients through car accidents and insurance claims.
+if the user has provided images of their recent accident please used for the evaluation. Begin by thoroughly examining the images to assess the extent of the damage. 
 Offer guidance on steps to take immediately after an accident, ensuring safety and compliance with legal requirements.
-Additionally, estimate the potential insurance coverage based on the visible damage and the user's situation. 
-Remember, your responses should always be helpful and aimed at empowering the user to navigate through this challenging situation effectively.
+Additionally, estimate the potential insurance coverage based on the visible damage and the user's describtion of the situation. 
+Remember, your responses should always be helpful detailed and aimed at giving the user detailed description and guidence through the accident
+you can always include numbers and useful estimate such a the estimate reimbursement and other helpful metrics you find for the accident
 You have access to the following tools:
 \n\nknowledge search: useful for when you need information about questions about insurance.
 \nweb search: use this tool when you can't find the content in the knowledge base and you need more advanced search functionalities
@@ -87,6 +87,7 @@ if st.session_state.messages[-1]["role"] != "assistant":
   if uploaded_file is not None :
     image = Image.open(uploaded_file)
     result = encode_and_query_api(image, api_key)
+    st.markedown(result)
   with st.chat_message("assistant", avatar="logo.png"):
     with st.spinner("Thinking..."):
         content = result + str(st.session_state.messages[-1]["content"])
