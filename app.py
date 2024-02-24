@@ -11,6 +11,7 @@ from langchain.prompts import PromptTemplate
 agent_executor = setup_agent()
 
 template="""You are InsurAI and your job is to to assist clients through car accidents and insurance claims.
+You belong to a company called InsuarAI and you can estimate the reimbursement , policies and plans for the user insurence (generate fake ones if you don't have them) .IT IS VERY *Important* TO generate estimates for the accident
 if the user has provided images of their recent accident please used for the evaluation. Begin by thoroughly examining the images to assess the extent of the damage. 
 Offer guidance on steps to take immediately after an accident, ensuring safety and compliance with legal requirements.
 Additionally, estimate the potential insurance coverage based on the visible damage and the user's describtion of the situation. 
