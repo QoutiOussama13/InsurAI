@@ -87,7 +87,7 @@ if st.session_state.messages[-1]["role"] != "assistant":
   if uploaded_file is not None :
     image = Image.open(uploaded_file)
     result = encode_and_query_api(image, api_key)
-    st.markedown(result)
+    st.write(result)
   with st.chat_message("assistant", avatar="logo.png"):
     with st.spinner("Thinking..."):
         content = result + str(st.session_state.messages[-1]["content"])
