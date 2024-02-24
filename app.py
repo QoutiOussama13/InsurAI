@@ -86,15 +86,15 @@ if st.session_state.messages[-1]["role"] != "assistant":
     image = Image.open(uploaded_file)
     result = encode_and_query_api(image, api_key)
   with st.chat_message("assistant", avatar="logo.png"):
-    st.markdown(result)
     with st.spinner("Thinking..."):
-      response = agent_executor.invoke(result + " " +  st.session_state.messages[-1]["content"])
+      content = result + str(st.session_state.messages[-1]["content"])
+      response = agent_executor.invoke(content)
       placeholder = st.empty()
       full_response = ''
       for item in response['output']:
         full_response += item
+        placeholder.markdown(full_response)
       placeholder.markdown(full_response)
-    placeholder.markdown(full_response)
-    message = {"role": "assistant", "content": full_response + result}
-    st.session_state.messages.append(message)
-    uploaded_file = None
+  message = {"role": "assistant", "content": full_response + result}
+  st.session_state.messages.append(message)
+  uploaded_file = None
