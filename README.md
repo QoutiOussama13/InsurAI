@@ -2,7 +2,7 @@
 ![Invest Wisely, Choose InsurAI For a Future of Simplified, Smart Insurance Solutions!](https://github.com/QoutiOussama13/InsurAI/assets/81428754/69191b47-7cf9-450e-8ab3-7bafb59ff654)
 
 
-# 🚀 InsurAI - Redefining Auto Insurance with Innovative AI at GitHub Hackathon! 🌐
+# 🚀 InsurAI - Redefining Auto Insurance with Innovative AI at GPT 4 Powered App Creation Hackathon! 🌐
 Exciting times at the GPT 4 Powered App Creation Hackathon as we proudly unveil our groundbreaking project, "InsurAI," a transformative app set to redefine the landscape of auto insurance. 🚗💡
 
 ## 🌟 Our Vision:
